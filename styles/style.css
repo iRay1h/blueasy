@@ -1,4 +1,4 @@
-*{
+* {
 
     margin: 0;
     padding: 0;
@@ -7,14 +7,15 @@
 
 }
 
-.home{
+.home {
 
     background-image: url(/images/Fondo.png);
     height: 101vh;
+    background-size: cover;
 
 }
 
-.navbar{
+.navbar {
 
     display: flex;
     justify-content: space-around;
@@ -24,21 +25,26 @@
 
 }
 
-.e{
+.e {
 
     color: #00bfff;
 
 }
 
-a{
+a {
 
     text-decoration: none;
+
+}
+
+.a1 {
+
     color: white;
     font-family: noto-sans, sans-serif;
 
 }
 
-nav{
+nav {
 
     display: flex;
     gap: 1vw;
@@ -46,7 +52,7 @@ nav{
 
 }
 
-.recu{
+.recu {
 
     color: #00bfff;
     border: 2px solid #00bfff;
@@ -54,7 +60,7 @@ nav{
 
 }
 
-.textos{
+.textos {
 
     display: flex;
     flex-direction: column;
@@ -66,14 +72,14 @@ nav{
 
 }
 
-.text1{
+.text1 {
 
     padding: 2vh;
     background-color: rgba(63, 72, 83, 0.8);
 
 }
 
-.blue{
+.blue {
 
     background-color: rgb(64, 179, 224);
     height: 70vh;
@@ -86,8 +92,435 @@ nav{
 
 }
 
-.text2{
+.text2 {
 
     width: 20vw;
 
 }
+
+.grd {
+
+    height: 130vh;
+
+}
+
+.navPort {
+
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    justify-content: space-around;
+    padding: 6vh;
+
+}
+
+.a2 {
+
+    color: gray;
+    font-family: noto-sans, sans-serif;
+
+}
+
+.grid {
+
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(2, auto);
+    gap: 40px;
+    justify-content: center;
+
+}
+
+.default {
+
+    display: flex;
+    background-color: #5c6b73;
+    padding: 60px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.left {
+
+    width: 50%;
+    color: white;
+
+}
+
+.left h1 {
+
+    font-weight: 300;
+    letter-spacing: 2px;
+
+}
+
+.left p {
+
+    margin-bottom: 20px;
+    line-height: 1.6;
+    max-width: 500px;
+
+}
+
+.visit {
+
+    padding: 10px 25px;
+    background: transparent;
+    border: 2px solid #3a444a;
+    color: #3a444a;
+    cursor: pointer;
+
+}
+
+.right {
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.right img {
+
+    width: 100%;
+    max-width: 550px;
+    object-fit: cover;
+
+}
+
+.twitter {
+
+    background-color: #00bfff;
+    color: white;
+    height: 35vh;
+
+}
+
+.Xnav {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 30px;
+    font-size: 15px;
+
+}
+
+.twitter img {
+
+    width: 20px;
+    height: 20px;
+
+}
+
+.twitter p {
+
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    font-size: 20px;
+    width: 90%;
+
+}
+
+.who {
+
+    position: relative;
+    height: 80vh;
+    background-image: url(../images/bg_whoIs.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.whoContent {
+
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+}
+
+.whoLeft {
+
+    width: 48%;
+
+}
+
+.whoRight {
+
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.whoLeft h1 {
+
+    font-weight: 300;
+    letter-spacing: 2px;
+
+}
+
+.lineWho {
+
+    width: 60px;
+    height: 2px;
+    background-color: white;
+    margin: 15px 0 25px 0;
+
+}
+
+.whoLeft p,
+.whoRight p {
+
+    margin-bottom: 20px;
+    line-height: 1.6;
+
+}
+
+.whoLogos {
+
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 25px;
+    margin-top: 20px;
+
+}
+
+.logoBox {
+
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logoBox img {
+
+    width: 30px;
+    height: 30px;
+
+}
+
+.testimonials {
+
+    background-color: white;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.testContent {
+
+    width: 80%;
+    position: relative;
+
+}
+
+.testHeader {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+
+}
+
+.testTitle h1 {
+
+    color: #5c6b73;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+}
+
+.lineTest {
+
+    width: 60px;
+    height: 2px;
+    background-color: #5c6b73;
+    margin-top: 15px;
+
+}
+
+.testQuote {
+
+    width: 40px;
+    height: 40px;
+
+}
+
+.testText {
+
+    font-size: 26px;
+    color: #6f7c82;
+    line-height: 1.6;
+    width: 90%;
+    margin-bottom: 30px;
+
+}
+
+.testAuthor {
+
+    color: #00bfff;
+    font-weight: bold;
+
+}
+
+.contact {
+
+    position: relative;
+    height: 100vh;
+    background-image: url(../images/bg_contact.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contactContent {
+
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+}
+
+.contactLeft {
+
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.contactLeft h1 {
+
+    font-weight: 300;
+    letter-spacing: 2px;
+
+}
+
+.lineContact {
+
+    width: 60px;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 15px;
+
+}
+
+.contactLeft label {
+
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+.contactLeft input {
+
+    background: transparent;
+    border: 1px solid white;
+    height: 50px;
+    color: white;
+
+}
+
+.contactLeft textarea {
+
+    background: transparent;
+    border: 1px solid white;
+    height: 200px;
+    color: white;
+    resize: none;
+
+}
+
+.btnMessage {
+
+    width: 45%;
+    padding: 15px;
+    background-color: #00bfff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+}
+
+.contactRight {
+
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 60px;
+
+}
+
+.contactRight p:first-child {
+
+    margin-bottom: 20px;
+    line-height: 1.6;
+
+}
+
+.footer {
+
+    background-color: #3f4853;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+
+}
+
+.footerNav {
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.footerNav a {
+
+    color: #6f7c82;
+    font-size: 13px;
+    letter-spacing: 1px;
+
+}
+
+.footerNav span {
+
+    color: #6f7c82;
+
+}
+
+.footerCopy {
+
+    color: #6f7c82;
+    font-size: 13px;
+
+}
+
