@@ -7,6 +7,29 @@
 
 }
 
+.navbar,
+.textos,
+.blue,
+.navPort,
+.grid,
+.default,
+.Xnav,
+.twitter p,
+.whoContent,
+.testContent,
+.contactContent,
+.footerNav,
+.footerCopy,
+.footer {
+
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+
 .home {
 
     background-image: url(/images/Fondo.png);
@@ -18,10 +41,12 @@
 .navbar {
 
     display: flex;
-    justify-content: space-around;
-    padding: 6vh;
+    justify-content: space-between;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
     background-color: rgba(63, 72, 83, 0.8);
     color: white;
+    max-width: 100%;
 
 }
 
@@ -89,6 +114,7 @@ nav {
     gap: 5vw;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
 
 }
 
@@ -109,8 +135,9 @@ nav {
     display: flex;
     flex-direction: row;
     color: gray;
-    justify-content: space-around;
-    padding: 6vh;
+    justify-content: space-between;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
 
 }
 
@@ -124,10 +151,17 @@ nav {
 .grid {
 
     display: grid;
-    grid-template-columns: repeat(4, 20%);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 40px;
-    justify-content: center;
+
+}
+
+.grid img {
+
+    width: 100%;
+    height: auto;
+    display: block;
 
 }
 
@@ -135,9 +169,11 @@ nav {
 
     display: flex;
     background-color: #5c6b73;
-    padding: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     align-items: center;
     justify-content: space-between;
+    max-width: 100%;
 
 }
 
@@ -202,7 +238,8 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     font-size: 15px;
 
 }
@@ -218,9 +255,9 @@ nav {
 
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     font-size: 20px;
-    width: 90%;
 
 }
 
@@ -240,7 +277,7 @@ nav {
 .whoContent {
 
     position: relative;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -324,7 +361,7 @@ nav {
 
 .testContent {
 
-    width: 80%;
+    width: 100%;
     position: relative;
 
 }
@@ -395,7 +432,7 @@ nav {
 .contactContent {
 
     position: relative;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -491,7 +528,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 60px;
+    max-width: 100%;
 
 }
 
@@ -500,6 +537,8 @@ nav {
     display: flex;
     align-items: center;
     gap: 15px;
+    padding: 0;
+    margin: 0;
 
 }
 
@@ -521,6 +560,266 @@ nav {
 
     color: #6f7c82;
     font-size: 13px;
+    padding: 0;
+    margin: 0;
 
 }
 
+
+/* ============================================
+   MEDIA QUERIES - de mayor a menor
+   ============================================ */
+
+
+/* Laptops, tablets landscape y escritorios pequeños: 921px - 1279px */
+@media (max-width: 1279px) {
+
+    .text2 {
+        width: 22vw;
+    }
+
+    .blue {
+        gap: 3vw;
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+}
+
+
+/* Tablets landscape y escritorios pequeños: 769px - 920px */
+@media (max-width: 920px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+
+    .textos {
+        font-size: 18px;
+        margin-top: 20vh;
+    }
+
+    .blue {
+        height: auto;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 30px;
+    }
+
+    .text2 {
+        width: 40vw;
+    }
+
+    .grd {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .navPort {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .default {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .twitter {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .who {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .whoContent {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .whoLeft,
+    .whoRight {
+        width: 100%;
+    }
+
+    .contact {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .contactContent {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contactLeft,
+    .contactRight {
+        width: 100%;
+    }
+
+    .footer {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+}
+
+
+/* Tablets y smartphones grandes: 481px - 768px */
+@media (max-width: 768px) {
+
+    .navbar h1 {
+        font-size: 22px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .textos {
+        font-size: 14px;
+        margin-top: 15vh;
+        text-align: center;
+    }
+
+    .blue {
+        flex-direction: column;
+    }
+
+    .text2 {
+        width: 80vw;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .testText {
+        font-size: 20px;
+    }
+
+    .whoLogos {
+        grid-template-columns: repeat(4, 55px);
+        gap: 15px;
+    }
+
+    .logoBox {
+        width: 55px;
+        height: 55px;
+    }
+
+    .btnMessage {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footerNav {
+        gap: 8px;
+    }
+
+}
+
+
+/* Smartphones pequeños: 352px - 480px */
+@media (max-width: 480px) {
+
+    .navbar h1 {
+        font-size: 18px;
+    }
+
+    .a1 {
+        font-size: 12px;
+    }
+
+    .recu {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+
+    .textos {
+        font-size: 11px;
+        margin-top: 12vh;
+    }
+
+    .text1 {
+        padding: 1vh;
+        text-align: center;
+    }
+
+    .text2 {
+        width: 90vw;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .default {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .testText {
+        font-size: 16px;
+    }
+
+    .whoLogos {
+        grid-template-columns: repeat(4, 45px);
+        gap: 10px;
+    }
+
+    .logoBox {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logoBox img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .btnMessage {
+        width: 100%;
+    }
+
+    .footerNav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+
+}
