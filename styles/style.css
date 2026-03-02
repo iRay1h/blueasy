@@ -265,7 +265,7 @@ nav {
 
     position: relative;
     height: 80vh;
-    background-image: url(../images/bg_whoIs.png);
+    background-image: url(../assets/images/bg_whoIs.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -420,7 +420,7 @@ nav {
 
     position: relative;
     height: 100vh;
-    background-image: url(../images/bg_contact.png);
+    background-image: url(../assets/images/bg_contact.png);
     background-size: cover;
     background-position: center;
     display: flex;
